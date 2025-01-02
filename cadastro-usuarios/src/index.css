@@ -1,3 +1,8 @@
+  * {
+    box-sizing: border-box;
+    padding: 2px;
+  }
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -13,6 +18,15 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+#caixa {
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px 5px;
+  text-align: center;
+  
+}
+
 a {
   font-weight: 500;
   color: #646cff;
@@ -25,14 +39,18 @@ a:hover {
 body {
   margin: 0;
   display: flex;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  background-color: white;
+  color: black;
 }
 
 h1 {
-  font-size: 3.2em;
+  font-size: 2em;
   line-height: 1.1;
+  background-color: red;
+  border-radius: 10px;
+  color: white;
 }
 
 button {
@@ -54,6 +72,36 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+#texto {
+  background-color: transparent;
+  padding: 5px;
+  margin: 4px;
+
+}
+
+#nome {
+  height: 30px;
+  width: 60px;
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  box-shadow: 6px 5px 5px black;
+  margin-bottom: 5px;
+} 
+
+#nome:hover {
+  background-color: black;
+  color: white;
+  height: 45px;
+  width: 72%;
+  cursor: pointer;
+}
+
+img {
+  margin: auto;
+  display: block;
+  margin-bottom: 10px;
+}
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
